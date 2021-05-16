@@ -8,4 +8,4 @@ Final project in course of Data Bases
 Логическая модель:
 ![alt text](https://github.com/ea-evdokimov/photoindustry/blob/master/pics/model_2.png?raw=true)
 Физическая модель:
-![alt text](https://github.com/ea-evdokimov/photoindustry/blob/master/pics/desc.png?raw=true)
+![alt text](https://github.com/ea-evdokimov/photoindustry/blob/master/pics/desc.pdf?raw=true)
