@@ -1,4 +1,4 @@
-# photoindustry
+# PHOTOINDUSTRY
 Final project in course of Data Bases
 
 Была выбрана сфера фотоиндустрии и продемонстрирована схема базы для нее. 
@@ -10,18 +10,20 @@ Final project in course of Data Bases
 Физическая модель:
 находится по [ссылке](https://github.com/ea-evdokimov/photoindustry/blob/master/pics/desc.pdf)
 
-Выполнено создание таблиц согласно физической модели.
+Выполнено:
+1. cоздание таблиц согласно физической модели.
 [link](https://github.com/ea-evdokimov/photoindustry/blob/master/script/init.sql)
-Добавление туда реалистичных данных.
+2. добавление туда реалистичных данных.
 [link](https://github.com/ea-evdokimov/photoindustry/blob/master/script/insert.sql)
-Написано по 2 примера на каждую CRUD-операцию.
+3. написано по 2 примера на каждую CRUD-операцию.
 [link](https://github.com/ea-evdokimov/photoindustry/blob/master/script/crud.sql)
-Написано 5 запросов SELECT со смысом.
+4. написано 5 запросов SELECT со смысом.
 [link](https://github.com/ea-evdokimov/photoindustry/blob/master/script/select.sql)
-Написана процедура, подсчитывающая суммарную стоимость фотопроекта, согласно информации из других таблиц.
+6. написана процедура, подсчитывающая суммарную стоимость фотопроекта, согласно информации из других таблиц.
 [link](https://github.com/ea-evdokimov/photoindustry/blob/master/script/proc.sql)
-Добавлено несколько представлений, в том числе с сокрытием данных.
+7. добавлено несколько представлений, в том числе с сокрытием данных.
 [link](https://github.com/ea-evdokimov/photoindustry/blob/master/script/view.sql)
-Написан триггер на изменение стоимости аренды фотостудии и, соответствующее изменение в цене проекта.
-Написан триггер на удаление фотографа и приписывание к описанию его портфолио deleted.
+8.написаны триггеры 
+ - на добавлении заказа компании к студии (в APPLICATION) пр добвалении фотопроекта
+ - на изменение стоимости аренды фотостудии и, соответствующее изменение в цене проекта
 [link](https://github.com/ea-evdokimov/photoindustry/blob/master/script/trigger.sql)
