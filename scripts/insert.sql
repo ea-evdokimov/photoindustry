@@ -172,33 +172,33 @@ values (10, 'Milky', 'Новоивановская 5а стр 3
 
 -- projects
 insert into project(project_id, project_desc, studio_id, photograph_id, client_id, scene_id, model_id, stuff_id,
-                          price, data)
+                          price, project_dt)
 values (1, 'Съемка глаза', 4, 3, 2, 1, 5, 1, null, '2001-12-12');
 insert into project(project_id, project_desc, studio_id, photograph_id, client_id, scene_id, model_id, stuff_id,
-                          price, data)
+                          price, project_dt)
 values (2, 'Съемка cвадьбы', 1, 1, 3, 1, null, 4, null, '2003-11-01');
 insert into project(project_id, project_desc, studio_id, photograph_id, client_id, scene_id, model_id, stuff_id,
-                          price, data)
+                          price, project_dt)
 values (3, 'Съемка архитектуры', 4, 3, 4, 4, null, 1, null, '2005-02-28');
 insert into project(project_id, project_desc, studio_id, photograph_id, client_id, scene_id, model_id, stuff_id,
-                          price, data)
+                          price, project_dt)
 values (4, 'Съемка рекламы', 5, 3, 2, 1, 5, 2, null, '2021-12-12');
 insert into project(project_id, project_desc, studio_id, photograph_id, client_id, scene_id, model_id, stuff_id,
-                          price, data)
+                          price, project_dt)
 values (5, 'Съемка в инстаграм', 2, 5, 1, 4, 3, 3, null, '2023-04-03');
 
 insert into project(project_id, project_desc, studio_id, photograph_id, client_id, scene_id, model_id, stuff_id,
-                          price, data)
+                          price, project_dt)
 values (6, 'Съемка цветов', 9, 3, 2, 4, 7, 9, null, '2002-05-08');
 insert into project(project_id, project_desc, studio_id, photograph_id, client_id, scene_id, model_id, stuff_id,
-                          price, data)
+                          price, project_dt)
 values (7, 'Съемка автомобилей', 10, 1, 9, 2, null, 4, null, '2023-11-29');
 insert into project(project_id, project_desc, studio_id, photograph_id, client_id, scene_id, model_id, stuff_id,
-                          price, data)
+                          price, project_dt)
 values (8, 'Съемка монет', 8, 3, 7, 5, null, 1, null, '2007-12-31');
 insert into project(project_id, project_desc, studio_id, photograph_id, client_id, scene_id, model_id, stuff_id,
-                          price, data)
+                          price, project_dt)
 values (9, 'Съемка рекламы для душа', 5, 7, 2, 4, 9, 2, null, '2001-11-29');
 insert into project(project_id, project_desc, studio_id, photograph_id, client_id, scene_id, model_id, stuff_id,
-                          price, data)
+                          price, project_dt)
 values (10, 'Съемка в вк', 9, 9, 1, 6, 8, 6, null, '2028-01-01');

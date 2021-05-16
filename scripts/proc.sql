@@ -21,11 +21,3 @@ where price is null;
 $$;
 
 CALL count_project_price();
-
-CREATE OR REPLACE FUNCTION mask_name(text) RETURNS text
-    LANGUAGE SQL AS
-$$
-SELECT overlay($1 placing repeat('*', position(' ' in $1) - 2) from 3 for position(' ' in $1) - 2)
-$$;
-
-select mask_name('EVDOKIMOV EGOR')

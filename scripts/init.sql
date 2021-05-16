@@ -5,7 +5,7 @@ set search_path = photo;
 
 -- create database PHOTOINDUSTRY_DATABASE;
 
-drop table if exists CLIENT, MODEL, STUDIO, STUFF, SCENE, PROJECT, PORTFOLIO, PHOTOGRAPH cascade;
+drop table if exists APPLICATION, CLIENT, MODEL, STUDIO, STUFF, SCENE, PROJECT, PORTFOLIO, PHOTOGRAPH cascade;
 
 create table PHOTOGRAPH
 (
@@ -16,7 +16,7 @@ create table PHOTOGRAPH
 
 create table PORTFOLIO
 (
-    portfolio_url text not null,
+    portfolio_url text check(portfolio_url like '%'),
     photograph_id integer,
     foreign key (photograph_id)
         references PHOTOGRAPH (photograph_id)
@@ -64,17 +64,17 @@ create table PROJECT
     project_id    integer PRIMARY KEY,
     project_desc  text    not null,
     studio_id     integer not null,
-    photograph_id integer,
+    photograph_id integer not null,
     client_id     integer not null,
     scene_id      integer,
     model_id      integer,
     stuff_id      integer,
     price         numeric(10, 1),
-    data          date    not null,
+    project_dt    date    not null,
 
     foreign key (photograph_id)
         references PHOTOGRAPH (photograph_id)
-        on update cascade,
+        on delete set default,
     foreign key (studio_id)
         references STUDIO (studio_id)
         on update cascade,
@@ -92,3 +92,21 @@ create table PROJECT
         on update cascade
 );
 
+-- for connection between
+create table APPLICATION
+(
+    app_id     serial PRIMARY KEY,
+    studio_id  integer,
+    client_id  integer,
+    project_id integer,
+
+    foreign key (studio_id)
+        references STUDIO (studio_id)
+        on update cascade,
+    foreign key (client_id)
+        references CLIENT (client_id)
+        on update cascade,
+    foreign key (project_id)
+        references PROJECT (project_id)
+        on update cascade
+);

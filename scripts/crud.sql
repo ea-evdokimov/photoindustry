@@ -4,7 +4,7 @@ set search_path = photo;
 insert into photograph(photograph_id, photograph_nm, salary)
 values (11, 'Беляев Марк Глебович', 11000);
 
-insert into project(project_id, project_desc, studio_id, photograph_id, client_id, scene_id, model_id, stuff_id, price, data)
+insert into project(project_id, project_desc, studio_id, photograph_id, client_id, scene_id, model_id, stuff_id, price, project_dt)
 values (11, 'НЮ фотография', 1, 2, 3, 3, 5, 1, default, '1200-12-12');
 
 -- read operations
@@ -26,9 +26,9 @@ set salary = 13000
 where photograph_id=2;
 
 -- delete operations
-delete from project
-where project_id = 6;
+delete from model
+where model_id = 6;
 
 delete from portfolio
-where photograph_id = 6;
+where photograph_id = 9;
 

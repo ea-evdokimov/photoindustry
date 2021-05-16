@@ -44,3 +44,4 @@ group by studio_nm
 having avg(price) > 30000
 order by avg_price;
 
+

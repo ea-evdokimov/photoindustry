@@ -33,24 +33,16 @@ update studio
 set price = 3000
 where studio_id=2;
 
--- trigger for deleting a photograph
-
-CREATE OR REPLACE FUNCTION change_id() returns trigger as
+-- the most important trigger on adding project -> adding app
+CREATE OR REPLACE FUNCTION add_app() returns trigger as
 $$
 begin
-    update portfolio
-    set portfolio_url = concat(portfolio_url, '|id changed')
-    where photograph_id = new.photograph_id;
+    insert into application values (default, new.studio_id, new.client_id, new.project_id);
     return new;
 end;
 $$ language plpgsql;
 
-create trigger trigger_change_id
-    after update of photograph_id
-    on photograph
+create trigger trigger_insert_project
+    after insert on project
     for each row
-execute function change_id();
-
-update photograph
-set photograph_id= 5
-where photograph_id = 7;
+execute function add_app();

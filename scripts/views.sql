@@ -34,7 +34,7 @@ from studio_info;
 CREATE OR REPLACE FUNCTION mask_name(text) RETURNS text
     LANGUAGE SQL AS
 $$
-SELECT overlay($1 placing repeat('*', position(' ' in $1) - 2) from 3 for position(' ' in $1) - 2)
+SELECT overlay($1 placing repeat('#', position(' ' in $1) - 3) from 2 for position(' ' in $1) - 2)
 $$;
 
 -- info about model
@@ -67,7 +67,7 @@ from stuff_info;
 CREATE OR REPLACE FUNCTION mask_client(text) RETURNS text
     LANGUAGE SQL AS
 $$
-SELECT overlay($1 placing repeat('*', length($1) - 2) from 2 for length($1) - 2)
+SELECT overlay($1 placing repeat('#', length($1) - 2) from 2 for length($1) - 2)
 $$;
 
 create or replace view client_list as
