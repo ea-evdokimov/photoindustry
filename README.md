@@ -24,8 +24,10 @@ Final project in course of Data Bases
 [select.sql](https://github.com/ea-evdokimov/photoindustry/blob/master/script/select.sql)
 6. написана процедура, подсчитывающая суммарную стоимость фотопроекта, согласно информации из других таблиц.
 [proc.sql](https://github.com/ea-evdokimov/photoindustry/blob/master/script/proc.sql)
+
 7. добавлено несколько представлений, в том числе с сокрытием данных.
 [view.sql](https://github.com/ea-evdokimov/photoindustry/blob/master/script/view.sql)
+
 8.написаны триггеры 
    - на добавлении заказа компании к студии (в APPLICATION) пр добвалении фотопроекта
    - на изменение стоимости аренды фотостудии и, соответствующее изменение в цене проекта
