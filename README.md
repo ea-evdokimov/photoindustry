@@ -29,8 +29,8 @@ Final project in course of Data Bases
 [view.sql](https://github.com/ea-evdokimov/photoindustry/blob/master/script/view.sql)
 
 8.написаны триггеры 
-   - на добавлении заказа компании к студии (в APPLICATION) пр добвалении фотопроекта
-   - на изменение стоимости аренды фотостудии и, соответствующее изменение в цене проекта
+  - на добавлении заказа компании к студии (в APPLICATION) пр добвалении фотопроекта
+  - на изменение стоимости аренды фотостудии и, соответствующее изменение в цене проекта
 [trigger.sql](https://github.com/ea-evdokimov/photoindustry/blob/master/script/trigger.sql)
 
 
