@@ -22,16 +22,16 @@ Final project in course of Data Bases
 [crud.sql](https://github.com/ea-evdokimov/photoindustry/blob/master/script/crud.sql)
 4. написано 5 запросов SELECT со смысом.
 [select.sql](https://github.com/ea-evdokimov/photoindustry/blob/master/script/select.sql)
-6. написана процедура, подсчитывающая суммарную стоимость фотопроекта, согласно информации из других таблиц.
+5. написана процедура, подсчитывающая суммарную стоимость фотопроекта, согласно информации из других таблиц.
 [proc.sql](https://github.com/ea-evdokimov/photoindustry/blob/master/script/proc.sql)
 
-7. добавлено несколько представлений, в том числе с сокрытием данных.
+6. добавлено несколько представлений, в том числе с сокрытием данных.
 [view.sql](https://github.com/ea-evdokimov/photoindustry/blob/master/script/view.sql)
 
-8.написаны триггеры 
-  - на добавлении заказа компании к студии (в APPLICATION) пр добвалении фотопроекта
-  - на изменение стоимости аренды фотостудии и, соответствующее изменение в цене проекта
-[trigger.sql](https://github.com/ea-evdokimov/photoindustry/blob/master/script/trigger.sql)
+7.написаны триггеры [trigger.sql](https://github.com/ea-evdokimov/photoindustry/blob/master/script/trigger.sql) 
+ - на добавлении заказа компании к студии (в APPLICATION) пр добвалении фотопроекта
+ - на изменение стоимости аренды фотостудии и, соответствующее изменение в цене проекта
+
 
 
 Лучше всего запускать в порядке init -> trigger -> insert -> proc -> crud -> select -> view
