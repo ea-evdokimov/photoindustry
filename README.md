@@ -11,7 +11,7 @@ Final project in course of Data Bases
 ![alt text](https://github.com/ea-evdokimov/photoindustry/blob/master/pics/model_2.png?raw=true)
 
 **Физическая модель:** находится по [ссылке](https://github.com/ea-evdokimov/photoindustry/blob/master/pics/desc.pdf)
-
+**Все три модели в одном файле** находятся [тут](https://github.com/ea-evdokimov/photoindustry/blob/master/pics/full_desc.pdf)
 *Выполнено:*
 
 1. cоздание таблиц согласно физической модели.
