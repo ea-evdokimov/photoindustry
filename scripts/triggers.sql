@@ -21,7 +21,6 @@ begin
 end;
 $$ language plpgsql;
 
-
 create trigger trigger_update
     after update of price
     on studio

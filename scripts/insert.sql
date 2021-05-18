@@ -202,3 +202,32 @@ values (9, 'Съемка рекламы для душа', 5, 7, 2, 4, 9, 2, null
 insert into project(project_id, project_desc, studio_id, photograph_id, client_id, scene_id, model_id, stuff_id,
                           price, project_dt)
 values (10, 'Съемка в вк', 9, 9, 1, 6, 8, 6, null, '2028-01-01');
+
+insert into project(project_id, project_desc, studio_id, photograph_id, client_id, scene_id, model_id, stuff_id,
+                          price, project_dt)
+values (11, 'Съемка шашлыков', 5, 5, 7, 9, null, 4, null, '2007-11-01');
+insert into project(project_id, project_desc, studio_id, photograph_id, client_id, scene_id, model_id, stuff_id,
+                          price, project_dt)
+values (12, 'Съемка в дворце', 3, 2, 4, 7, 5, 1, null, '2009-09-09');
+insert into project(project_id, project_desc, studio_id, photograph_id, client_id, scene_id, model_id, stuff_id,
+                          price, project_dt)
+values (13, 'Съемка гонок', 5, 3, 3, 9, 7, 4, null, '2021-12-12');
+insert into project(project_id, project_desc, studio_id, photograph_id, client_id, scene_id, model_id, stuff_id,
+                          price, project_dt)
+values (14, 'Съемка в facebook', 3, 5, 1, 2, 7, 3, null, '2031-05-03');
+
+insert into project(project_id, project_desc, studio_id, photograph_id, client_id, scene_id, model_id, stuff_id,
+                          price, project_dt)
+values (15, 'Съемка на воздушном шаре', 9, 3, 8, 5, 8, 4, null, '2007-07-07');
+insert into project(project_id, project_desc, studio_id, photograph_id, client_id, scene_id, model_id, stuff_id,
+                          price, project_dt)
+values (16, 'Съемка малышей', 4, 2, 3, 7, 5, 4, null, '2013-11-29');
+insert into project(project_id, project_desc, studio_id, photograph_id, client_id, scene_id, model_id, stuff_id,
+                          price, project_dt)
+values (17, 'Съемка ракеты', 4, 3, 6, 10, 2, 1, null, '2005-11-30');
+insert into project(project_id, project_desc, studio_id, photograph_id, client_id, scene_id, model_id, stuff_id,
+                          price, project_dt)
+values (18, 'Съемка рекламы для ванны', 1, 2, 2, 3, 9, 8, null, '2003-11-29');
+insert into project(project_id, project_desc, studio_id, photograph_id, client_id, scene_id, model_id, stuff_id,
+                          price, project_dt)
+values (19, 'Съемка мордашки', 7, 7, 5, 1, 3, 6, null, '2021-01-01');

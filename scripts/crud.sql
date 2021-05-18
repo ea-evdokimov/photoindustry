@@ -2,10 +2,10 @@ set search_path = photo;
 
 -- create operations
 insert into photograph(photograph_id, photograph_nm, salary)
-values (11, 'Беляев Марк Глебович', 11000);
+values (22, 'Беляев Марк Глебович', 11000);
 
 insert into project(project_id, project_desc, studio_id, photograph_id, client_id, scene_id, model_id, stuff_id, price, project_dt)
-values (11, 'НЮ фотография', 1, 2, 3, 3, 5, 1, default, '1200-12-12');
+values (21, 'НЮ фотография', 1, 2, 3, 3, 5, 1, default, '1200-12-12');
 
 -- read operations
 select avg(price)
@@ -14,7 +14,6 @@ from studio;
 select photograph_nm, salary
 from photograph
 where salary = (select min(salary) from photograph);
-
 
 -- update operations
 update model
