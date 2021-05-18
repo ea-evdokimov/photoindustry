@@ -30,9 +30,9 @@ Final project in course of Data Bases
 [proc.sql](https://github.com/ea-evdokimov/photoindustry/blob/master/script/proc.sql)
 6. добавлено несколько представлений, в том числе с сокрытием данных.
 [view.sql](https://github.com/ea-evdokimov/photoindustry/blob/master/script/view.sql)
-7.написаны триггеры [trigger.sql](https://github.com/ea-evdokimov/photoindustry/blob/master/script/trigger.sql) 
-- на добавлении заказа компании к студии (в ORDER) при добвалении фотопроекта
-- на изменение стоимости аренды фотостудии и, соответствующее изменение в цене проекта
+7. написаны триггеры [trigger.sql](https://github.com/ea-evdokimov/photoindustry/blob/master/script/trigger.sql) 
+ - на добавлении заказа компании к студии (в ORDER) при добвалении фотопроекта
+ - на изменение стоимости аренды фотостудии и, соответствующее изменение в цене проекта
 
 
 
