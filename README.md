@@ -11,6 +11,8 @@ Final project in course of Data Bases
 ![alt text](https://github.com/ea-evdokimov/photoindustry/blob/master/pics/model_2.png?raw=true)
 
 **Физическая модель:** находится по [ссылке](https://github.com/ea-evdokimov/photoindustry/blob/master/pics/desc.pdf)
+ 
+Так как в процесе проектирования было замечена излишность в связях, была добавлена сущность ORDER для связи клиента с фотостудией, которая занимается проектом. Таким образом избавились от стрелки(отношшения) многие ко многим. 
 
 **Все три модели в одном файле** находятся [тут](https://github.com/ea-evdokimov/photoindustry/blob/master/pics/full_desc.pdf)
 
@@ -26,13 +28,11 @@ Final project in course of Data Bases
 [select.sql](https://github.com/ea-evdokimov/photoindustry/blob/master/script/select.sql)
 5. написана процедура, подсчитывающая суммарную стоимость фотопроекта, согласно информации из других таблиц.
 [proc.sql](https://github.com/ea-evdokimov/photoindustry/blob/master/script/proc.sql)
-
 6. добавлено несколько представлений, в том числе с сокрытием данных.
 [view.sql](https://github.com/ea-evdokimov/photoindustry/blob/master/script/view.sql)
-
 7.написаны триггеры [trigger.sql](https://github.com/ea-evdokimov/photoindustry/blob/master/script/trigger.sql) 
- - на добавлении заказа компании к студии (в APPLICATION) пр добвалении фотопроекта
- - на изменение стоимости аренды фотостудии и, соответствующее изменение в цене проекта
+- на добавлении заказа компании к студии (в ORDER) при добвалении фотопроекта
+- на изменение стоимости аренды фотостудии и, соответствующее изменение в цене проекта
 
 
 
