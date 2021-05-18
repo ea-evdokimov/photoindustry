@@ -1,5 +1,5 @@
 set search_path = photo;
--- trigger for recounting all price of the project
+-- trigger for recounting all price of the project with change of price of studio
 CREATE OR REPLACE FUNCTION count_price() returns trigger as
 $$
 begin
@@ -33,7 +33,7 @@ set price = 3000
 where studio_id=2;
 
 -- the most important trigger on adding project -> adding app
-CREATE OR REPLACE FUNCTION add_app() returns trigger as
+CREATE OR REPLACE FUNCTION add_order() returns trigger as
 $$
 begin
     insert into order_project values (new.project_id, new.studio_id, new.client_id);
@@ -44,4 +44,4 @@ $$ language plpgsql;
 create trigger trigger_insert_project
     after insert on project
     for each row
-execute function add_app();
+execute function add_order();
