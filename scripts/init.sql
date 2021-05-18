@@ -78,9 +78,6 @@ create table PROJECT
     foreign key (studio_id)
         references STUDIO (studio_id)
         on update cascade,
-    foreign key (client_id)
-        references CLIENT (client_id)
-        on update cascade,
     foreign key (model_id)
         references MODEL (model_id)
         on update cascade,
@@ -92,21 +89,17 @@ create table PROJECT
         on update cascade
 );
 
--- for connection between
-create table APPLICATION
+-- for connection between clients and studios
+create table ORDER_PROJECT
 (
-    app_id     serial PRIMARY KEY,
+    order_id   integer PRIMARY KEY,
     studio_id  integer,
     client_id  integer,
-    project_id integer,
 
     foreign key (studio_id)
         references STUDIO (studio_id)
         on update cascade,
     foreign key (client_id)
         references CLIENT (client_id)
-        on update cascade,
-    foreign key (project_id)
-        references PROJECT (project_id)
         on update cascade
 );

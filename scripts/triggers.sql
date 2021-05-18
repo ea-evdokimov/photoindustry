@@ -37,7 +37,7 @@ where studio_id=2;
 CREATE OR REPLACE FUNCTION add_app() returns trigger as
 $$
 begin
-    insert into application values (default, new.studio_id, new.client_id, new.project_id);
+    insert into order_project values (new.project_id, new.studio_id, new.client_id);
     return new;
 end;
 $$ language plpgsql;
